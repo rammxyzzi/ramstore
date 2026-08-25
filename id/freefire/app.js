@@ -4,13 +4,13 @@ import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 // ==========================================
 // 1. KONFIGURASI SUPABASE & WA SENDER
 // ==========================================
-const supabaseUrl = 'URL_SUPABASE_ANDA' 
-const supabaseAnonKey = 'KEY_ANON_SUPABASE'
+const supabaseUrl = 'https://awbklgvwnsofkaiwjcso.supabase.co' 
+const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF3YmtsZ3Z3bnNvZmthaXdqY3NvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODc2NTE1MTEsImV4cCI6MjEwMzIyNzUxMX0.Cli1QGWqU7TrNEgUnPxmcUTdt8P5uR60ppqzIdTrt8Q'
 const supabase = createClient(supabaseUrl, supabaseAnonKey)
 
 const WA_SENDER_API_URL = 'https://app.wasender.dev/api/send'
-const WA_SENDER_API_KEY = 'API_KEY_WASENDER' // Dapatkan dari dashboard wasender
-const WA_ADMIN_NUMBER = '628xxxxxxxxxx' // Nomor penerima notif (Gunakan format 62)
+const WA_SENDER_API_KEY = 'wsm_jgpHLHOyMfYG4p1bSQo2SsGHMyMH86MNJIC1NuW5uO0TRHow' // Dapatkan dari dashboard wasender
+const WA_ADMIN_NUMBER = '6283894837190' // Nomor penerima notif (Gunakan format 62)
 
 // ==========================================
 // 2. LOGIKA NOTIFIKASI WHATSAPP
@@ -24,7 +24,7 @@ async function sendWANotification(type, detail) {
     }
 
     try {
-        const response = await fetch(WA_SENDER_API_URL, {
+        const response = await fetch(api.wasender.dev/messages/text, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
