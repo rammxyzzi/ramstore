@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda - E-Commerce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 font-sans max-w-md mx-auto min-h-screen relative pb-16 shadow-lg">
+
+  <!-- Header -->
+  <header class="bg-[#1c3c74] text-white p-3 sticky top-0 z-20">
+    <div class="flex items-center justify-between mb-3">
+      <div class="flex items-center gap-3">
+        <i class="fa-solid fa-bars text-xl"></i>
+        <h1 class="text-xl font-extrabold italic tracking-tighter">itemku</h1>
+      </div>
+      <div class="flex items-center gap-2 text-sm">
+        <div class="bg-red-600 rounded-full w-5 h-5 border-2 border-white"></div>
+        <button class="bg-blue-600 text-white px-3 py-1 rounded-md font-bold text-xs">Masuk</button>
+      </div>
+    </div>
+    <div class="relative">
+      <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm"></i>
+      <input type="text" placeholder="Cari Game, Diamond, Hero..." class="w-full bg-white text-gray-800 rounded-lg py-2 pl-9 pr-3 text-sm outline-none">
+    </div>
+  </header>
+
+  <!-- Banner Slider (Dummy) -->
+  <div class="bg-[#1c3c74] p-3 pb-8 rounded-b-3xl">
+    <div class="flex gap-3 overflow-x-auto scrollbar-hide">
+      <img src="https://placehold.co/600x300/27272a/ffffff?text=Promo+1" class="w-[85%] rounded-xl shrink-0 object-cover h-32" alt="Banner">
+      <img src="https://placehold.co/600x300/27272a/ffffff?text=Promo+2" class="w-[85%] rounded-xl shrink-0 object-cover h-32" alt="Banner">
+    </div>
+  </div>
+
+  <!-- Categories -->
+  <div class="bg-white mx-3 -mt-5 rounded-xl shadow-sm p-4 grid grid-cols-5 gap-2 text-center relative z-10">
+    <a href="#" class="flex flex-col items-center gap-1">
+      <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center text-blue-500 text-lg"><i class="fa-solid fa-gem"></i></div>
+      <span class="text-[10px] text-gray-600">Top Up</span>
+    </a>
+    <a href="#" class="flex flex-col items-center gap-1">
+      <div class="w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center text-purple-500 text-lg relative">
+        <span class="absolute -top-2 -right-2 bg-red-500 text-white text-[8px] px-1 rounded-sm">Baru</span>
+        <i class="fa-solid fa-gamepad"></i>
+      </div>
+      <span class="text-[10px] text-gray-600">Game Key</span>
+    </a>
+    <a href="akun.html" class="flex flex-col items-center gap-1">
+      <div class="w-10 h-10 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-500 text-lg"><i class="fa-solid fa-user-astronaut"></i></div>
+      <span class="text-[10px] text-gray-800 font-bold">Akun</span>
+    </a>
+    <a href="#" class="flex flex-col items-center gap-1">
+      <div class="w-10 h-10 bg-pink-50 rounded-lg flex items-center justify-center text-pink-500 text-lg"><i class="fa-solid fa-ticket"></i></div>
+      <span class="text-[10px] text-gray-600">Voucher</span>
+    </a>
+    <a href="#" class="flex flex-col items-center gap-1">
+      <div class="w-10 h-10 bg-gray-50 rounded-lg flex items-center justify-center text-gray-800 text-lg"><i class="fa-solid fa-cube"></i></div>
+      <span class="text-[10px] text-gray-600">Roblox</span>
+    </a>
+  </div>
+
+  <!-- Bottom Navigation -->
+  <div class="fixed bottom-0 w-full max-w-md bg-white border-t border-gray-200 flex justify-around items-center py-2 z-50 text-xs text-gray-400">
+    <a href="index.html" class="flex flex-col items-center text-blue-600 gap-1"><i class="fa-solid fa-house text-lg"></i>Beranda</a>
+    <a href="#" class="flex flex-col items-center gap-1"><i class="fa-regular fa-heart text-lg"></i>Favorit</a>
+    <a href="#" class="flex flex-col items-center gap-1"><i class="fa-solid fa-money-bill-transfer text-lg"></i>Transaksi</a>
+    <a href="#" class="flex flex-col items-center gap-1"><i class="fa-solid fa-headset text-lg"></i>Bantuan</a>
+    <a href="#" class="flex flex-col items-center gap-1"><i class="fa-regular fa-user text-lg"></i>Akun</a>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
